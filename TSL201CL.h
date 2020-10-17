@@ -10,7 +10,7 @@
  * 			This file contains:
  * 				- SunSensor Class, which has three functions:
  * 					- SunSensor(int, int, int): constructor. Sets pin values 
- *												and initializes pins
+ *					- initialize(): initializes pins
  * 					- clearRegister(): clears sensor register to get fresh
  * 					  				   readings
  * 					- readPixels(): reads analog pixel voltages and returns the
@@ -29,6 +29,7 @@
 class SunSensor {
 public:
 	void SunSensor(int CLK = 12, int SI = 13, int analogOut = A0);
+	void initialize();
 	void clearRegister() const;
 	float[64] readPixels() const; //
 

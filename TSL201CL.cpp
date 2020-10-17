@@ -8,6 +8,9 @@ void SunSensor::SunSensor(int CLK, int SI, int analogIn) {
 	this->CLK = CLK;
 	this->SI = SI;
 	this->analogIn = analogIn;
+}
+
+void SunSensor::initialize() {
 	pinMode(CLK, OUTPUT);
 	pinMode(SI, OUTPUT);
 	pinMode(analogIn, INPUT);
