@@ -4,7 +4,7 @@
 
 #include "TSL201CL.h"
 
-void SunSensor::initialize(int CLK, int SI, int analogIn) {
+void SunSensor::SunSensor(int CLK, int SI, int analogIn) {
 	this->CLK = CLK;
 	this->SI = SI;
 	this->analogIn = analogIn;
