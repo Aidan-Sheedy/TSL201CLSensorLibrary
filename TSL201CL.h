@@ -28,10 +28,10 @@
  */
 class SunSensor {
 public:
-	void SunSensor(int CLK = 12, int SI = 13, int analogOut = A0);
+	SunSensor(int CLK = 12, int SI = 13, int analogOut = 14);
 	void initialize();
 	void clearRegister() const;
-	float[64] readPixels() const; //
+	void readPixels(float *buf, int bufSize) const; // accepts array of size 64
 
 private:
 	int CLK;    // clock pin
